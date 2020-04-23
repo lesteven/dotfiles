@@ -9,3 +9,7 @@ set expandtab
 filetype plugin on
 filetype indent on
 
+set hlsearch
+
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
