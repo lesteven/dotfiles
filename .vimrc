@@ -7,12 +7,15 @@ set softtabstop=4
 set expandtab
 
 filetype plugin on
-filetype indent on
+filetype indent on "different indents for diff languages
 
-set hlsearch
+set hlsearch "when search, highlight all
 
 :highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
+:match ExtraWhitespace /\s\+$/ "highlights white space at end
 
-set statusline+=%F
-set laststatus=2
+set statusline+=%F "current file path
+set statusline+=\  "add space
+set statusline+=col:%c "column number
+set laststatus=2 "to always display status line
+
