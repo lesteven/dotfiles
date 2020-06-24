@@ -16,6 +16,8 @@ set hlsearch "when search, highlight all
 
 set statusline+=%F "current file path
 set statusline+=\  "add space
-set statusline+=col:%c "column number
+set statusline+=[line:%l] "line number
+set statusline+=\  "add space
+set statusline+=[col:%c] "column number
 set laststatus=2 "to always display status line
 
