@@ -15,9 +15,11 @@ set hlsearch "when search, highlight all
 :match ExtraWhitespace /\s\+$/ "highlights white space at end
 
 set statusline+=%F "current file path
-set statusline+=\  "add space
+
+set statusline+=%= "right align from now on
 set statusline+=[line:%l] "line number
 set statusline+=\  "add space
 set statusline+=[col:%c] "column number
+
 set laststatus=2 "to always display status line
 
