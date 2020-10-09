@@ -23,3 +23,10 @@ set statusline+=[col:%c] "column number
 
 set laststatus=2 "to always display status line
 
+augroup typescriptreact
+  au!
+  autocmd BufNewFile,BufRead *.tsx   set filetype=typescript
+  autocmd BufNewFile,BufRead *.tsx   set filetype=javascript
+augroup END
+
+set nofixeol
