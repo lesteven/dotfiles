@@ -29,4 +29,4 @@ augroup typescriptreact
   autocmd BufNewFile,BufRead *.tsx   set filetype=javascript
 augroup END
 
-set nofixeol
+set nofixeol "prevents vim from adding a newline at the end of the file
